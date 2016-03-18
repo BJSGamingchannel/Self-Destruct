@@ -1,1 +1,1 @@
-Yea
+Print("test")
