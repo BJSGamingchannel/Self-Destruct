@@ -3,9 +3,9 @@
 #Programming Language: Python
 
 #Start of program.
-Import TKinter as Tk
-Import os as OS
-Import random as rand
-Import math as M
+import TKinter as Tk
+import os as OS
+import random as rand
+import math as M
 
 def Main():
