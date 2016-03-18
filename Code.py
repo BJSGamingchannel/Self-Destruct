@@ -12,9 +12,7 @@ from Tk import *
 font1 = Font(family = "Times New Roman", size = "20", weight= "bold")
 
 def MasterFunction():
-
-
-
+  
 MasterWindow = Tk()
 Can1 = Canvas(master, width=500, height=500)
 Can1.pack()
