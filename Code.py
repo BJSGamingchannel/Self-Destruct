@@ -23,3 +23,18 @@ def MasterFunction():
     TitleMain.pack()
 
 MasterFunction()
+
+#The below needs to be tested / edited in Python:
+
+Score = 0
+
+Label(MasterWindow, text = Score, font = font1)
+
+If Score > 10:
+    Label(MasterWindow, text = Your good at this!, (Score), font = font1)
+
+ScoreAdd = false
+
+If ScoreAdd = true:
+    Score + 1
+    Label(MasterWindow, text = Score, font = font1)
