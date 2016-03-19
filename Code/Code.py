@@ -31,6 +31,7 @@ def MasterFunction():
         
         Can2 = Canvas(MasterWindow, width=500. height=500, bg = "snow")
         StoredName = StringVar()
+        NameLabel = Label(Can 2, text = "Please enter your name", bg = "snow")
         NameEntryBox = Entry(Can2, bd = 4, textvariable = StoredName, bg = "snow")
         NameEntryBox.pack()
 
