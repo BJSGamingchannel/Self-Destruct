@@ -11,14 +11,15 @@ import random as rand
 import math as M
 import time as time
 
-font1 = ("Times New Roman", "30", "bold")
+font1 = ("AR BLANCA", "50", "bold")
 font2 = ("Times New Roman", "25", "bold")
+font3 = ("Times New Roman", "30", "bold")
 
 def MasterFunction():
 
     MasterWindow = Tk()
     MasterWindow.title("Self Destruct")
-    MasterWindow.geometry("1350x740")
+    MasterWindow.geometry("1920x1080")
   
     def FirstWindow():
         
@@ -33,9 +34,9 @@ def MasterFunction():
 
         Can1 = Canvas(width = 1350, height = 740, bg = "snow")
         Can1.pack(expand = YES, fill = BOTH)
-        TitleMain = Label(MasterWindow, text = "Self Destruct", font = font1, fg = "deep sky blue", bg = "snow").place( x = 570, y = 1)
-        ButtonStart = Button(MasterWindow, text = "Start", font = font2, fg = "deep sky blue", bg = "snow", command = FirstWindow).place( x = 630, y = 60)
-        ButtonExit = Button(MasterWindow, text ="Exit", font = font2, fg = "deep sky blue", bg = "snow", command = exit).place( x = 637, y = 130)
+        TitleMain = Label(MasterWindow, text = "Self Destruct", font = font1, fg = "deep sky blue", bg = "snow").place( x = 775, y = 1)
+        ButtonStart = Button(MasterWindow, text = "Start", font = font3, fg = "deep sky blue", bg = "snow", command = FirstWindow()).place( x = 902, y = 90)
+        ButtonExit = Button(MasterWindow, text ="Exit", font = font3, fg = "deep sky blue", bg = "snow", command = exit).place( x = 910, y = 175)
 
     Menu()
 
