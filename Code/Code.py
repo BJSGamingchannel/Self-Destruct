@@ -11,9 +11,8 @@ import random as rand
 import math as M
 import time as time
 
-font1 = ("AR BLANCA", "50", "bold")
+font1 = ("Times New Roman", "30", "bold")
 font2 = ("Times New Roman", "25", "bold")
-font3 = ("Times New Roman", "30", "bold")
 
 def MasterFunction():
 
@@ -22,21 +21,28 @@ def MasterFunction():
     MasterWindow.geometry("1920x1080")
   
     def FirstWindow():
-        
-        Can2 = Canvas(MasterWindow, width=500, height=500, bg = "snow")
+
+        global StoredName        
+        Canvas(MasterWindow, width=1920, height=1080, bg = "snow").place(x = 0, y = 0)
         StoredName = StringVar()
-        NameLabel = Label(Can2, text = "Please enter your name", bg = "snow")
+        NameLabel = Label(text = "Please enter your name", bg = "snow", font = font2)
         NameLabel.pack()
-        NameEntryBox = Entry(Can2, bd = 4, textvariable = StoredName, bg = "snow")
+        NameEntryBox = Entry(bd = 4, textvariable = StoredName, bg = "snow", font = font2)
         NameEntryBox.pack()
+        ButtonName = Button(text = "Continue", font = font2, bg = "snow", command = ChangeThis)
+        ButtonName.pack()
+
+    def ChangeThis():
+
+        label1 = Label(text = StoredName, bg = "snow", font = font2)
+        label1.pack()
         
     def Menu():
 
-        Can1 = Canvas(width = 1350, height = 740, bg = "snow")
-        Can1.pack(expand = YES, fill = BOTH)
-        TitleMain = Label(MasterWindow, text = "Self Destruct", font = font1, fg = "deep sky blue", bg = "snow").place( x = 775, y = 1)
-        ButtonStart = Button(MasterWindow, text = "Start", font = font3, fg = "deep sky blue", bg = "snow", command = FirstWindow()).place( x = 902, y = 90)
-        ButtonExit = Button(MasterWindow, text ="Exit", font = font3, fg = "deep sky blue", bg = "snow", command = exit).place( x = 910, y = 175)
+        Canvas(width = 1920, height = 1080, bg = "snow").place(x = 0, y = 0)
+        TitleMain = Label(MasterWindow, text = "Self Destruct", font = font1, fg = "deep sky blue", bg = "snow").place( x = 845, y = 1)
+        ButtonStart = Button(MasterWindow, text = "Start", font = font2, fg = "deep sky blue", bg = "snow", command = FirstWindow).place( x = 909, y = 60)
+        ButtonExit = Button(MasterWindow, text ="Exit", font = font2, fg = "deep sky blue", bg = "snow", command = exit).place( x = 915, y = 130)
 
     Menu()
 
