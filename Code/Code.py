@@ -20,7 +20,7 @@ def MasterFunction():
     MasterWindow.title("Self Destruct")
     MasterWindow.geometry("1920x1080")
   
-    def FirstWindow():
+    def UserName():
 
         global StoredName        
         Canvas(MasterWindow, width=1920, height=1080, bg = "snow").place(x = 0, y = 0)
@@ -37,11 +37,11 @@ def MasterFunction():
         label1 = Label(text = StoredName, bg = "snow", font = font2)
         label1.pack()
         
-    def Menu():
+    def Menu(): #The first window the user sees.
 
         Canvas(width = 1920, height = 1080, bg = "snow").place(x = 0, y = 0)
         TitleMain = Label(MasterWindow, text = "Self Destruct", font = font1, fg = "deep sky blue", bg = "snow").place( x = 845, y = 1)
-        ButtonStart = Button(MasterWindow, text = "Start", font = font2, fg = "deep sky blue", bg = "snow", command = FirstWindow).place( x = 909, y = 60)
+        ButtonStart = Button(MasterWindow, text = "Start", font = font2, fg = "deep sky blue", bg = "snow", command = UserName).place( x = 909, y = 60)
         ButtonExit = Button(MasterWindow, text ="Exit", font = font2, fg = "deep sky blue", bg = "snow", command = exit).place( x = 915, y = 130)
 
     Menu()
